@@ -1,0 +1,23 @@
+package ram;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Sel {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\SRIRAM\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://www.leafground.com/pages/Link.html");
+		WebElement clickElement=driver.findElement(By.linkText("Go to Home Page"));
+		clickElement.click();
+		
+		
+		
+
+	}
+
+}
